@@ -1,0 +1,17 @@
+{
+  "name": "zk-circuits",
+  "version": "1.0.0",
+  "description": "zero knowledge circuits",
+  "license": "MIT",
+  "dependencies": {
+    "circom": "0.0.35",
+    "circomlib": "0.0.20",
+    "snarkjs": "0.1.20"
+  },
+  "scripts": {
+    "build": "npm run compile && npm run setup && npm run generateverifier",
+    "compile": "mkdir -p build && circom src/circuit.circom -o build/circuit.json",
+    "setup": "snarkjs setup --protocol groth -c build/circuit.json --pk build/provingKey.json --vk build/verifyingKey.json",
+    "generateverifier": "snarkjs generateverifier --pk build/provingKey.json --vk build/verifyingKey.json -v build/Verifier.sol"
+  }
+}
