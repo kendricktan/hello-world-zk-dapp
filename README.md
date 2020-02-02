@@ -4,7 +4,7 @@ A simple but practical (zero knowledge) hello world project, tested on `ganache-
 
 ## What does it do?
 
-Simply put, the zero-knowledge dapp is responsible to verify if a user belongs to a certain group or not, without revealing who that particular person is.
+Simply put, the zero-knowledge dapp is responsible to verify if a user belongs to a certain group, without revealing any more additional information (i.e. who the user is).
 
 # Getting Started
 
