@@ -2,6 +2,10 @@
 
 A simple but practical (zero knowledge) hello world project, tested on `ganache-cli`.
 
+## What does it do?
+
+Simply put, the zero-knowledge dapp is responsible to verify if a user belongs to a certain group or not, without revealing who that particular person is.
+
 # Getting Started
 
 ```bash
