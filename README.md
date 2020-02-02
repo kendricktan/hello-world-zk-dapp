@@ -9,6 +9,7 @@ git clone https://github.com/kendricktan/hello-world-zk-dapp.git
 cd hello-world-zk-dapp
 
 # Linux/Mac
+# Note: Only tested on node:12.14.1
 npm run start
 
 # Docker

@@ -1,4 +1,4 @@
-FROM node:10.16.3-jessie
+FROM node:12.14.1-stretch
 
 COPY . /zkdapp
 
