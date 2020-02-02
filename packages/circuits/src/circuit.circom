@@ -1,22 +1,6 @@
 include "../node_modules/circomlib/circuits/bitify.circom";
 include "../node_modules/circomlib/circuits/escalarmulfix.circom";
-include "../node_modules/circomlib/circuits/mimcsponge.circom";
 include "../node_modules/circomlib/circuits/comparators.circom";
-
-template Hasher(length) {
-  signal input in[length];
-  signal input key;
-  signal output hash;
-
-  component hasher = MiMCSponge(length, 220, 1);
-  hasher.k <== key;
-
-  for (var i = 0; i < length; i++) {
-    hasher.ins[i] <== in[i];
-  }
-
-  hash <== hasher.outs[0];
-}
 
 template PublicKey() {
   // Note: private key

@@ -14,6 +14,11 @@ cd hello-world-zk-dapp
 
 # Linux/Mac
 # Note: Only tested on node:12.14.1
+# This starts up a ganache-cli process,
+# compiles the zk-snark circuits,
+# deploys the smart contracts
+# and finally generate some proofs to verify
+# if the user is part of the group or not
 npm run start
 
 # Docker
