@@ -106,3 +106,6 @@ dist
 build/
 
 .vscode/
+
+# Some weird thing with caching local packages...
+package-lock.json
