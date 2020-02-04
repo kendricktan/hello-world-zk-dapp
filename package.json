@@ -7,7 +7,7 @@
     "deploy": "lerna run deploy",
     "verify": "lerna run verify",
     "ganache": "ganache-cli -m helloworld",
-    "start": "npm run ganache > /dev/null & GANACHE_PID=$! && lerna exec -- npm install && npm run bootstrap && npm run build && npm run deploy && npm run verify && kill $GANACHE_PID"
+    "start": "npm run ganache > /dev/null & GANACHE_PID=$! && npm run bootstrap && lerna exec -- npm install && npm run build && npm run deploy && npm run verify && kill $GANACHE_PID"
   },
   "dependencies": {
     "ganache-cli": "^6.9.0",
