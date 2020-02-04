@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "Scripts to interact with contract",
   "license": "MIT",
+  "optionalDependencies": {
+    "zk-circuits": "^1.0.0",
+    "zk-contracts": "^1.0.0"
+  },
   "dependencies": {
     "circom": "0.0.35",
     "circomlib": "0.0.20",
     "ethers": "^4.0.44",
     "snarkjs": "0.1.20",
     "wasmbuilder": "0.0.8",
-    "websnark": "0.0.5",
-    "zk-circuits": "^1.0.0",
-    "zk-contracts": "^1.0.0"
+    "websnark": "0.0.5"
   },
   "scripts": {
     "verify": "node index.js"
