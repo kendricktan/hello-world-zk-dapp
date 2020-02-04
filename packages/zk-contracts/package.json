@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "truffle": "^5.1.11"
+    "truffle": "^5.1.11",
+    "zk-circuits": "^1.0.0"
   },
   "scripts": {
     "build": "truffle compile",
