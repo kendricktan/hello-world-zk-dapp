@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna add zk-circuits && lerna add zk-contracts packages/scripts && lerna bootstrap",
     "deploy": "lerna run deploy",
     "verify": "lerna run verify",
     "ganache": "ganache-cli -m helloworld",

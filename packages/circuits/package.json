@@ -6,7 +6,8 @@
   "dependencies": {
     "circom": "0.0.35",
     "circomlib": "0.0.20",
-    "snarkjs": "0.1.20"
+    "snarkjs": "0.1.20",
+    "zk-contracts": "^1.0.0"
   },
   "scripts": {
     "build": "npm run compile && npm run setup && npm run generateverifier",
