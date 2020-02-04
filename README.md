@@ -11,6 +11,7 @@ Simply put, the zero-knowledge dapp is responsible to verify if a user belongs t
 ```bash
 git clone https://github.com/kendricktan/hello-world-zk-dapp.git
 cd hello-world-zk-dapp
+npm install
 
 # Linux/Mac
 # Note: Only tested on node:12.14.1
