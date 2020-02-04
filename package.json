@@ -1,19 +1,16 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.20.2"
-  },
   "scripts": {
     "build": "lerna run build",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist",
     "deploy": "lerna run deploy",
     "verify": "lerna run verify",
     "ganache": "ganache-cli -m helloworld",
-    "start": "npm run ganache > /dev/null & GANACHE_PID=$! && npm run build && npm run bootstrap && npm run deploy && npm run verify && kill $GANACHE_PID"
+    "start": "npm run ganache > /dev/null & GANACHE_PID=$! && lerna exec npm install && npm run bootstrap && npm run build && npm run deploy && npm run verify && kill $GANACHE_PID"
   },
   "dependencies": {
-    "ganache": "^6.4.4",
-    "ganache-cli": "^6.9.0"
+    "ganache-cli": "^6.9.0",
+    "lerna": "^3.20.2"
   }
 }
